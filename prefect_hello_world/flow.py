@@ -11,4 +11,5 @@ def hello_task():
 with Flow("hello-flow") as flow:
     hello_task()
 
-flow.run()
+if __name__ == "__main__":
+    flow.run()
